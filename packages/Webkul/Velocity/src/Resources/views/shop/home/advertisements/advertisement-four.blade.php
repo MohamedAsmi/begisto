@@ -18,7 +18,53 @@
             $isRendered = true;
         @endphp
 
-       
+        <div class="container-fluid advertisement-four-container">
+            <div class="row">
+                <div class="col-lg-4 col-12 advertisement-container-block no-padding">
+                    @if (isset($advertisementFour[0]))
+                        <a @if (isset($one)) href="{{ $one }}" @endif aria-label="Advertisement">
+                            <img
+                                class="{{ $isLazyLoad ? 'lazyload' : '' }}"
+                                @if (! $isLazyLoad) src="{{ asset('/storage/' . $advertisementFour[0]) }}" @endif
+                                data-src="{{ asset('/storage/' . $advertisementFour[0]) }}" alt="" />
+                        </a>
+                    @endif
+                </div>
+
+                <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
+                    @if (isset($advertisementFour[1]))
+                        <a @if (isset($two)) href="{{ $two }}" @endif class="row col-12 remove-padding-margin" aria-label="Advertisement">
+                            <img
+                                class="offers-ct-top {{ $isLazyLoad ? 'lazyload' : '' }}"
+                                @if (! $isLazyLoad) src="{{ asset('/storage/' . $advertisementFour[1]) }}" @endif
+                                data-src="{{ asset('/storage/' . $advertisementFour[1]) }}" alt="" />
+                        </a>
+                    @endif
+
+                    <div style="height: 10px;"></div>
+
+                    @if (isset($advertisementFour[2]))
+                        <a @if (isset($three)) href="{{ $three }}" @endif class="row col-12 remove-padding-margin" aria-label="Advertisement">
+                            <img
+                                class="offers-ct-bottom {{ $isLazyLoad ? 'lazyload' : '' }}"
+                                @if (! $isLazyLoad) src="{{ asset('/storage/' . $advertisementFour[2]) }}" @endif
+                                data-src="{{ asset('/storage/' . $advertisementFour[2]) }}" alt="" />
+                        </a>
+                    @endif
+                </div>
+
+                <div class="col-lg-4 col-12 advertisement-container-block no-padding">
+                    @if (isset($advertisementFour[3]))
+                        <a @if (isset($four)) href="{{ $four }}" @endif aria-label="Advertisement">
+                            <img
+                                class="{{ $isLazyLoad ? 'lazyload' : '' }}"
+                                @if (! $isLazyLoad) src="{{ asset('/storage/' . $advertisementFour[3]) }}" @endif
+                                data-src="{{ asset('/storage/' . $advertisementFour[3]) }}" alt="" />
+                        </a>
+                    @endif
+                </div>
+            </div>
+        </div>
     @endif
 @endif
 
