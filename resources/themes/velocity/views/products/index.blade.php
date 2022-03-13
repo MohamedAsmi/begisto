@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-
+{{-- {{dd($_SERVER['REQUEST_URI'])}} --}}
                 @if ($isProductsDisplayMode)
                     <div class="filters-container">
                         <template v-if="products.length >= 0">
