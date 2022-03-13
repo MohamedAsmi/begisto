@@ -1,4 +1,3 @@
-
 @php
 $isRendered = false;
 $advertisementFour = null;
@@ -67,23 +66,23 @@ $isRendered = true;
             <a @if (isset($one)) href="{{ $one }}" @endif aria-label="Advertisement">
                 <img class="{{ $isLazyLoad ? 'lazyload' : '' }}" @if (! $isLazyLoad) src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" @endif data-src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" alt="" />
                 <div class="d-flex justify-content-between">
-                <div class="pull-left"><img src="{{ asset('/themes/velocity/assets/images/favicon.png') }}" class="rounded" alt=""></div>
-                <div class="pull-right">Category: Vendor1</div>
+                    <div class="pull-left">Store:</div>
+                    <div class="pull-right">Category: Vendor1</div>
                 </div>
             </a>
         </div>
 
-        <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
+        <!-- <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
             <a @if (isset($one)) href="{{ $one }}" @endif aria-label="Advertisement">
                 <img class="{{ $isLazyLoad ? 'lazyload' : '' }}" @if (! $isLazyLoad) src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" @endif data-src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" alt="" />
             </a>
-        </div>
+        </div> -->
 
-        <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
+        <!-- <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
             <a @if (isset($one)) href="{{ $one }}" @endif aria-label="Advertisement">
                 <img class="{{ $isLazyLoad ? 'lazyload' : '' }}" @if (! $isLazyLoad) src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" @endif data-src="{{ asset('/themes/velocity/assets/images/big-sale-banner.webp') }}" alt="" />
             </a>
-        </div>
+        </div> -->
 
 
 
@@ -118,7 +117,7 @@ $isRendered = true;
     </div>
 
 </div>
-<div class="container-fluid advertisement-four-container">
+<!-- <div class="container-fluid advertisement-four-container">
     <div class="row">
         <div class="col-lg-4 col-12 advertisement-container-block offers-ct-panel">
             <a @if (isset($one)) href="{{ $one }}" @endif aria-label="Advertisement">
@@ -170,5 +169,5 @@ $isRendered = true;
             </div> -->
     </div>
 
-</div>
+<!-- </div>  -->
 @endif
