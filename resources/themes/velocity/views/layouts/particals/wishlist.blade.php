@@ -1,4 +1,4 @@
-@php
+<!-- @php
     $showWishlist = core()->getConfigData('general.content.shop.wishlist_option') == "1" ? true : false;
 @endphp
 
@@ -10,4 +10,4 @@
         src="{{ route('customer.wishlist.index') }}">
     </wishlist-component-with-badge>
 
-@endif
+@endif -->
