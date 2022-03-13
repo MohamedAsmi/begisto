@@ -33,6 +33,7 @@ return array(
     'paths' => array(
         storage_path('app/public'),
         public_path('storage')
+        
     ),
 
     /*

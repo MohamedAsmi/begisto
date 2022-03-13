@@ -50,7 +50,8 @@ class Category extends TranslatableModel implements CategoryContract
         if (! $this->image)
             return;
 
-        return public_path($this->image);
+        return Storage::url($this->image);
+        
     }
 
     /**
