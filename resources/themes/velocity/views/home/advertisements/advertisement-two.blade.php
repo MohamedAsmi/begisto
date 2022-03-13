@@ -43,7 +43,7 @@
 @endif
 
 @if (! $isRendered)
-    <div class="container-fluid advertisement-two-container">
+    <!-- <div class="container-fluid advertisement-two-container">
         <div class="row">
             <a class="col-lg-9 col-md-12 no-padding">
                 <img
@@ -59,5 +59,5 @@
                     data-src="{{ asset('/themes/velocity/assets/images/trimmer.webp') }}" alt="" />
             </a>
         </div>
-    </div>
+    </div> -->
 @endif

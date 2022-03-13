@@ -5172,7 +5172,8 @@ body:after {
 }
 
 .footer .footer-content .footer-statics .software-description p {
-    font-size: 14px
+    font-size: 14px;
+    padding: 6px;
 }
 
 .footer .top-brands {

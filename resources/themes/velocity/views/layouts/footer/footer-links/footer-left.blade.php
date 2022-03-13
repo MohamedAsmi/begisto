@@ -7,7 +7,7 @@
                     class="logo full-img" alt="" width="200" height="50" />
             @else
                 <img
-                    src="{{ asset('themes/velocity/assets/images/nav-logo4.png') }}"
+                    src="{{ asset('themes/velocity/assets/images/nav-logo5.png') }}"
                     class="logo full-img" alt="" width="200" height="50" />
             @endif
 
